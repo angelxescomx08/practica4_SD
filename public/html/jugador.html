@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugador</title>
+    <link rel="stylesheet" href="../css/jugador.css">
+    <link rel="stylesheet" href="../css/servidor.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/reloj.js"></script>
+    <script src="../js/jugador.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p id="reloj"></p>
+        <ul class="container__ul">
+            <li class="container__li"><span class="container__span">ISBN:</span><p id="ISBN" class="container__p"></p></li>
+            <li class="container__li"><span class="container__span">Libro:</span><p id="libro" class="container__p"></p></li>
+            <li class="container__li"><span class="container__span">Autor:</span><p id="autor" class="container__p"></p></li>
+            <li class="container__li"><span class="container__span">Editorial:</span><p id="editorial" class="container__p"></p></li>
+            <li class="container__li"><span class="container__span">Precio:</span><p id="precio" class="container__p"></p></li>
+        </ul>
+        <button class="boton" onclick="pedir_libro();">Pedir libro</button>
+        <button class="boton" onclick="cambiar_hora();">Cambiar hora</button>
+    </div>
+</body>
+</html>
